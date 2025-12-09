@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution/build
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+.env
+.env.*
+.python-version
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Local vector DB (Chroma)
+AI Pizza Agent/chroma_langchain_db/
+
+# App-specific cache/data directories
+AI Pizza Agent/**/data/
+
+# Editor swap files
+*.swp
+*.swo

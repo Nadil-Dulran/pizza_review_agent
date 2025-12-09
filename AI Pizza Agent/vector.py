@@ -4,7 +4,8 @@ from langchain_core.documents import Document
 import os
 import pandas as pd
 
-df = pd.read_csv("realistic_restaurant_reviews.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "realistic_restaurant_reviews.csv")
+df = pd.read_csv(csv_path)
 embedings = OllamaEmbeddings(model="mxbai-embed-large")
 
 db_location = "./chroma_langchain_db"

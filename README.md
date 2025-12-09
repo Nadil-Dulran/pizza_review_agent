@@ -1,4 +1,4 @@
-# AI Pizza Review Agent
+# AI Pizza Review Agent 🍕
 
 Simple, local AI agent that answers questions about a pizza restaurant by retrieving relevant customer reviews and generating concise answers with an LLM.
 

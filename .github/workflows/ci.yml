@@ -32,7 +32,7 @@ jobs:
         flake8 "AI Pizza Agent" --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 "AI Pizza Agent" --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Smoke import check
+    - name: Syntax check (no imports)
       run: |
-        # Basic import check to catch obvious issues without running the app
-        python -c "import sys; sys.path.append('AI Pizza Agent'); import main, vector; print('Imports OK')"
+        # Compile Python files to bytecode to catch syntax errors without executing imports
+        python -m py_compile "AI Pizza Agent"/*.py

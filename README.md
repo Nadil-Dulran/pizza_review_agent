@@ -57,7 +57,7 @@ ollama pull mxbai-embed-large
 
 3) Create venv, install deps, run
 ```bash
-cd "/Users/nadildulran/MyWork/AI Agents/pizza_review_agent"
+cd "pizza_review_agent"
 make venv
 make install
 make run

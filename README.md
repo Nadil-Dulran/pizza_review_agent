@@ -85,4 +85,5 @@ Quit the app with `q` when prompted.
 - Adjust the system prompt in `main.py` to change tone or answer style.
 
 ## License
-- This repository contains user-provided review CSV data. - Ensure you have rights to any external data sources you add.
+- This repository contains sample user provided review CSV data.
+- Ensure you have rights to any external data sources if you add to the project.

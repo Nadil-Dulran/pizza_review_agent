@@ -18,16 +18,16 @@ Simple, local AI agent that answers questions about a pizza restaurant by retrie
 **Project Structure**
 ```
 AI Pizza Agent/
-	main.py                  # CLI loop: prompt + answer
-	vector.py                # Builds/loads Chroma DB + retriever
+	main.py                           # CLI loop: prompt + answer
+	vector.py                         # Builds/loads Chroma DB + retriever
 	realistic_restaurant_reviews.csv  # Review dataset (source data)
-	requirements.txt         # Python dependencies
+	requirements.txt                  # Python dependencies
 ```
 
 **Use Case**
 - Quickly explore customer feedback about a pizza restaurant.
-- Ask targeted questions such as: "What do customers say about delivery time?" or "How is the pepperoni pizza rated?"
-- The agent pulls top-k relevant reviews and uses the LLM to generate a helpful answer.
+- Ask targeted questions such as: "How is the pepperoni pizza rated?" or "What do customers say about delivery time?"
+- The agent pulls top relevant reviews and uses the local LLM to generate a helpful answer.
 
 **Data Source**
 - Current source: `AI Pizza Agent/realistic_restaurant_reviews.csv` (Title, Review, Rating, Date).
@@ -55,7 +55,7 @@ ollama pull llama3.2
 ollama pull mxbai-embed-large
 ```
 
-3) Create venv, install deps, run
+3) Create venv, install deps & run
 ```bash
 cd "pizza_review_agent"
 make venv
